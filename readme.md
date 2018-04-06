@@ -139,6 +139,21 @@ FileContainer.deleteFile({
 
 <hr>
 
+### Delete file by fileId
+
+```
+DELETE /FileContainers/files/:fileId
+```
+```javascript
+FileContainer.deleteFileByFileId({
+  fileId: 'fileId'
+});
+```
+
+* **fileId** - id of file to delete
+
+<hr>
+
 ### Delete file by filename
 
 ```
@@ -205,6 +220,8 @@ GET /FileContainers/:containerName/downloadInline/:fileId
 Errors:
 * **404** File not found.
 
+<hr>
+
 ### Download file inline by fileId
 
 ```
@@ -215,6 +232,8 @@ GET /FileContainers/downloadInlineFileId/:fileId
 
 Errors:
 * **404** File not found.
+
+<hr>
 
 ### Download file inline by name
 
