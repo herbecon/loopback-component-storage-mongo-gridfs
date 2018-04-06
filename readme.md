@@ -205,6 +205,17 @@ GET /FileContainers/:containerName/downloadInline/:fileId
 Errors:
 * **404** File not found.
 
+### Download file inline by fileId
+
+```
+GET /FileContainers/downloadInlineFileId/:fileId
+```
+
+* **fileId** - id of file to download in line
+
+Errors:
+* **404** File not found.
+
 ### Download file inline by name
 
 ```
