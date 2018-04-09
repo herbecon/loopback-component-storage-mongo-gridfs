@@ -142,7 +142,7 @@ FileContainer.deleteFile({
 ### Delete file by fileId
 
 ```
-DELETE /FileContainers/:fileId
+DELETE /FileContainers/files/:fileId
 ```
 ```javascript
 FileContainer.deleteFileByFileId({
