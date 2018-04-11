@@ -246,3 +246,16 @@ GET /FileContainers/:containerName/downloadInlineByName/:filename
 
 Errors:
 * **404** File not found.
+
+<hr>
+
+### Get steam file by FileId
+
+```
+GET /FileContainers/getStreamFileId/:fileId
+```
+
+* **fileId** - id of file to stream
+
+Errors:
+* **404** File not found.
