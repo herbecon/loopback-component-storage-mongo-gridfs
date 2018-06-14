@@ -184,10 +184,9 @@ POST /FileContainers/:containerName/upload
 ### Download file
 
 ```
-GET /FileContainers/:containerName/download/:fileId
+GET /FileContainers/download
 ```
 
-* **containerName** - name of container
 * **fileId** - id of file to download
 
 Errors:
@@ -208,41 +207,26 @@ Errors:
 
 <hr>
 
+### Download files zip
+
+```
+GET /FileContainers/downloadZipFiles
+```
+
+* **filesId** - string with ids of files to download
+
+Errors:
+* **404** File not found.
+
+<hr>
+
 ### Download file inline
 
 ```
-GET /FileContainers/:containerName/downloadInline/:fileId
-```
-
-* **containerName** - name of container
-* **fileId** - id of file to download in line
-
-Errors:
-* **404** File not found.
-
-<hr>
-
-### Download file inline by fileId
-
-```
-GET /FileContainers/downloadInlineFileId/:fileId
+GET /FileContainers/downloadInline/:fileId
 ```
 
 * **fileId** - id of file to download in line
-
-Errors:
-* **404** File not found.
-
-<hr>
-
-### Download file inline by name
-
-```
-GET /FileContainers/:containerName/downloadInlineByName/:filename
-```
-
-* **containerName** - name of container
-* **filename** - name of file to download in line
 
 Errors:
 * **404** File not found.
