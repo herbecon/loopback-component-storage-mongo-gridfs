@@ -51,6 +51,18 @@ GET /FileContainers
 ```javascript
 FileContainer.getContainers();
 ```
+<hr>
+
+### Elimina toso los ficheros que cumplen con la condición
+
+```
+DELETE /FileContainers/delete/:where
+```
+```javascript
+FileContainer.delete({
+  where: 'where'
+});
+```
 
 <hr>
 
