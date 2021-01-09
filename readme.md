@@ -53,7 +53,7 @@ FileContainer.getContainers();
 ```
 <hr>
 
-### Elimina toso los ficheros que cumplen con la condición
+### Delete all files that meet a condition
 
 ```
 DELETE /FileContainers/delete/:where
